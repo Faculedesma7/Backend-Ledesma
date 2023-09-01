@@ -18,7 +18,7 @@ describe("Testing Auth Endpoints Success", () => {
         //await this.db.drop();
         await this.db.close();
         this.requester.app.close(() => {
-          console.log('Conexión cerrada');
+            pinoLogger.info('Conexión cerrada');
         });
     });
     beforeEach(async function () {
@@ -104,7 +104,7 @@ describe("Testing Auth Endpoints Fails", () => {
         //await this.db.drop();
         //await this.db.close();
         this.requester.app.close(() => {
-          console.log('Conexión cerrada');
+            pinoLogger.info('Conexión cerrada');
         });
     });
     beforeEach(async function () {
